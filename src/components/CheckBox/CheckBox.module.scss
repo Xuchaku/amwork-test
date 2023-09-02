@@ -1,0 +1,21 @@
+@import "./../../globals/index.scss";
+.wrapper {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  .label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid $bg-gray;
+    background-color: $bg-neutral;
+  }
+  .check {
+    display: none;
+  }
+}
+.check:checked + label {
+  background-color: $font-color-blue;
+}

@@ -17,6 +17,7 @@ export function useLoading(url: string, method: Method = "GET") {
     try {
       setIsLoading(true);
       const todos = await getTodos(url, method);
+      console.log(todos);
       if (todos instanceof Error) {
         setData([]);
         throw new Error(todos.message);
@@ -31,5 +32,5 @@ export function useLoading(url: string, method: Method = "GET") {
       setIsLoading(false);
     }
   }
-  return { data, isLoading, isError };
+  return { data, isLoading, isError, setData };
 }

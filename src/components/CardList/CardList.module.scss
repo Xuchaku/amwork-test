@@ -1,0 +1,47 @@
+@import "./../../globals/index.scss";
+.wrapper {
+  background-color: white;
+  width: 263px;
+  margin: 0 auto;
+  .observer {
+    width: 100%;
+    height: 20px;
+  }
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .title {
+    @include typography(13px, $font-color-green);
+  }
+  .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    .counter {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #7b8aab;
+      border-radius: 4px;
+      text-align: center;
+      @include typography(12px, $font-color-neutral);
+    }
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.plus {
+  width: 20px;
+  height: 20px;
+  background-color: $bg-default;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

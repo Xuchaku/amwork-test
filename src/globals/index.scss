@@ -1,0 +1,15 @@
+$bg-default: #d9d9d9;
+$bg-card: #d0daeb;
+$font-color-green: #50b810;
+$font-color-neutral: #555555;
+$font-color-blue: #3d8fec;
+$bg-gray: #aab7d4;
+$bg-neutral: #f8fafb;
+
+@mixin typography($size, $color) {
+  font-size: $size;
+  font-family: "system-ui", "BlinkMacSystemFont", "Segoe UI", "Noto Sans",
+    "Helvetica, Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  color: $color;
+}

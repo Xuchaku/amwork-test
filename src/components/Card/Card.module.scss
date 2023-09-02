@@ -1,0 +1,55 @@
+@import "./../../globals/index.scss";
+.wrapper {
+  width: 100%;
+  border-radius: 4px;
+  background-color: $bg-card;
+  padding: 4px;
+  box-sizing: border-box;
+  p {
+    margin: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    gap: 8px;
+    .date {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @include typography(13px, $font-color-green);
+    }
+    .description {
+      @include typography(13px, $font-color-neutral);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .meta {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      .badges {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+      }
+      img {
+        margin-left: auto;
+      }
+    }
+  }
+  .title {
+    p {
+      @include typography(14px, $font-color-blue);
+      span {
+        margin-left: 8px;
+      }
+    }
+    span {
+      text-transform: capitalize;
+    }
+  }
+}
