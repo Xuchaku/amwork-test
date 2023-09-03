@@ -19,7 +19,7 @@ export function useIntersect(
   }, []);
   useEffect(() => {
     if (ref) {
-      const node = ref.current;
+      const node = ref.current as HTMLDivElement;
       intersector?.observe(node);
     }
   }, [ref, intersector]);
